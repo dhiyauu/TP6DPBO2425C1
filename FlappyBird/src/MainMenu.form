@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="MainMenu">
+  <grid id="27dc6" binding="mainPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="500" height="754"/>
+    </constraints>
+    <properties>
+      <foreground color="-1"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="d631e" class="javax.swing.JButton" binding="playButton">
+        <constraints border-constraint="First"/>
+        <properties>
+          <background color="-23296"/>
+          <font name="Comic Sans MS"/>
+          <foreground color="-1"/>
+          <horizontalTextPosition value="0"/>
+          <text value="START"/>
+          <verticalAlignment value="0"/>
+        </properties>
+      </component>
+      <component id="3fc48" class="javax.swing.JButton" binding="exitButton">
+        <constraints border-constraint="Center"/>
+        <properties>
+          <background color="-1730242"/>
+          <font name="Comic Sans MS"/>
+          <foreground color="-1"/>
+          <horizontalTextPosition value="0"/>
+          <text value="EXIT"/>
+        </properties>
+      </component>
+      <component id="17e24" class="javax.swing.JLabel">
+        <constraints border-constraint="North"/>
+        <properties>
+          <text value="Label"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
