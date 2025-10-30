@@ -1,10 +1,10 @@
-# TP5DPBO2425C1
+# TP6DPBO2425C1
 
 ## Janji
 Saya Dhiya Ulhaq dengan NIM 2407716 Mengerjakan Tugas Praktikum 6 (Java Swing GUI Game Developer) dalam Mata Kuliah Desain Pemrograman Berorientasi Objek Untuk Keberkahan-Nya Maka Saya Tidak Akan Melakukan Kecurangan Seperti Yang Telah Di Spesifikasikan. Amiiin
 
 ## Penjelasan Desain Program
-Program ini adalah permainan Flappy Bird versi sederhana yang menggunakan Java Swing. Pemain menekan tombol Space untuk membuat burung terbang melewati pipa tanpa menabrak. Struktur kelas yang dibuat diantaranya:
+Program ini adalah permainan **Flappy Bird** versi sederhana yang menggunakan Java Swing. Pemain menekan tombol *Space* untuk membuat burung terbang melewati pipa tanpa menabrak. Struktur kelas yang dibuat diantaranya:
 
 ### `App`
 Fungsi : Titik masuk (entry point) program. Menampilkan `MainMenu`, dan memulai permainan dengan `startGame()`.
@@ -55,11 +55,13 @@ Membuat Getter yang berfungsi mengambil nilai masing-masing atribut. Sedangkan, 
 Fungsi : Menggambar semua elemen di layar (background, burung, pipa, skor, dan tampilan game over).
 
 ### Diagram Hubungan Antar Kelas
-jangan lupa gambar
+<p align="center">
+        <img width="400" alt="Diagram Flappy Bird drawio" src="https://github.com/user-attachments/assets/9fa0a60e-7915-4057-ba39-7b1ac9d2d526" />
+</p>
 
 - App membuat jendela utama.
 - MainMenu menampilkan tampilan awal dengan animasi burung.
-- Saat “Play” diklik → App.startGame() dijalankan → membuat Logic dan View.
+- Saat “Start” diklik → `App.startGame()` dijalankan → membuat Logic dan View.
 - Logic mengatur pergerakan dan status game.
 - View menggambar semua objek berdasarkan data dari Logic.
 
@@ -76,7 +78,7 @@ Menampilkan menu utama (`MainMenu`) dengan tombol *Start* dan *Exit*.
 ### b. Menampilkan Main Menu
 Terdapat backround dan judul untuk permainan Flappy Bird agar terlihat menarik. Selain itu, menambahkan gambar burung Flappy yang terbang bolak-balik menggunakan `Timer` kecil. Lalu **playButton** memanggil `app.startGame()` dan **exitButton** uuntuk menutup aplikasi.
 
-### c. Gamedimulai
+### c. Game dimulai
 ```java
 Logic logika = new Logic();
 View tampilan = new View(logika);
@@ -107,7 +109,7 @@ Rectangle playerRect = new Rectangle(...);
 Rectangle pipeRect = new Rectangle(...);
 if (playerRect.intersects(pipeRect)) isGameOver = true;
 ```
-Semua pipa digerakkan ke kiri. Ketika burung menabrak pipa atau jatuh ke bawah maka dianggap **Game Over**. Namun jika burung melewati pipa bawah, skor bertamah 1.
+Semua pipa digerakkan ke kiri. Ketika burung menabrak pipa atau jatuh ke bawah maka dianggap **Game Over**. Namun jika burung melewati pipa bawah, skor bertambah 1.
 
 ### g. Tampilan (View)
 `View.paintComponent()` digambar ulang tiap frame:
@@ -121,3 +123,4 @@ Semua pipa digerakkan ke kiri. Ketika burung menabrak pipa atau jatuh ke bawah m
 Saat `isGameOver = true`, semua timer berhenti. Namun, jika pemain menekan **R**, maka `restartGame();`agar dapat mengatur ulang posisi burung, menghapus semua pipa, menyetel skor ke 0, dan menjalankan ulang `gameLoop` dan `pipesCooldown`.
 
 ## Dokumentasi
+https://github.com/user-attachments/assets/bfb22dc5-2d3f-43fb-800c-88d04ef1889d
